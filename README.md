@@ -62,8 +62,36 @@ An instruction for a computer must *not* be ambiguous in any way.
 
 ![image](https://github.com/Minwauu/Regular-expression-FSM/assets/110039102/c52141c7-0f43-4854-b5fa-df7b758a809d)
 
+a(a|b)* 
+
+{a,aa,ab,aaa,aab,aba,abbb, ...)
+
+ba*b - b followed by one or more a's followed by a b - bb,bab,baab
+
+0+1+0 - one or more 0s followed by one or more 1s followed by 0 - 010,0010, 0110
+
+(abc)+ - a followed by b followed by c together one or more times - abc,abcabc,abcabcabc
+
+a*(ba) - zero or more a's followed by ba - ba,aba,aaba
+
+a+b?c - one or more a's followed by zero or 1 b's followed by c - ac,abc,aabc
+
+(a|b|c)d*e - a or b or c followed by zero or more d's followed by e - ae, bde, cddde
+
+a+b - one or more a's followed by b - ab,aab,aaab
+
+(a|b)c? - a or b followed by zero or one c - a, ac, bc
+
+(ba)+(cd)+ - one or more ba followed by one or more cd - bacd, babacd, babacdcd
+
+a?b* - zero or one a's followed by zero or more b's - b,ab,abb
+
+(a|b) - a or b
+
+Joh?n - Jo followed by zero or one h followed by n - Jon, John
 
 
+FSM - starting state (arrow comes from nowhere on diagram), accepting state(double circle on diagram).
 
 
 
